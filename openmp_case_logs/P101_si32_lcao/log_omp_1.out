@@ -1,0 +1,95 @@
+                                                                                     
+                              ABACUS v3.11.0-beta.1
+
+               Atomic-orbital Based Ab-initio Computation at UStc                    
+
+                     Website: http://abacus.ustc.edu.cn/                             
+               Documentation: https://abacus.deepmodeling.com/                       
+                  Repository: https://github.com/abacusmodeling/abacus-develop       
+                              https://github.com/deepmodeling/abacus-develop         
+                      Commit: 0e6f73dcd (Sat May 23 14:12:42 2026 +0800)
+
+ Sat May 23 18:59:33 2026
+Info: Local MPI proc number: 1,OpenMP thread number: 1,Total thread number: 1,Local thread limit: 96
+ MAKE THE DIR         : OUT.autotest/
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+ Warning: The lattice vector is left-handed; a right-handed vector is prefered.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+ RUNNING WITH DEVICE  : CPU / AMD EPYC 9475F 48-Core Processor (x1)
+ WARNING: some of potential function is set to zero cause of less than 1e-30.
+ UNIFORM GRID DIM     : 192 * 96 * 96
+ UNIFORM GRID DIM(BIG): 48 * 24 * 24
+ DONE(0.16713    SEC) : SYMMETRY
+ DONE(0.167135   SEC) : SETUP UNITCELL
+ DONE(0.208119   SEC) : INIT K-POINTS
+ ----------------------------------------------------------------
+ Self-consistent calculations for electrons
+ ----------------------------------------------------------------
+ SPIN    KPOINTS         PROCESSES   THREADS/PROC  THREADS/TOTAL 
+ 1       1               1           1             1             
+ ----------------------------------------------------------------
+ Use Systematically Improvable Atomic bases
+ ----------------------------------------------------------------
+ TOTAL NBASE 416
+ ELEMENT ORBITALS        NBASE       NATOM       
+ Si      2s2p1d-8au      13          32          
+ ----------------------------------------------------------------
+ Initial plane wave basis and FFT box
+ ----------------------------------------------------------------
+ DONE(0.48204    SEC) : INIT PLANEWAVE
+ START CHARGE         : atomic
+ DONE(0.614104   SEC) : CHARGE
+ DONE(0.637561   SEC) : POTENTIALS
+
+ ================================================================
+ SELF-CONSISTENT: 
+ ================================================================
+ DONE(1.95873    SEC) : INIT SCF
+ Problem setting option. Aborting...
+ ** On entry to DSTEDC parameter number  6 had an illegal value
+[cmhpcl007:848758:0:848758] Caught signal 11 (Segmentation fault: Sent by the kernel at address (nil))
+==== backtrace (tid: 848758) ====
+ 0  /mnt/data/yushen/miniconda3/lib/./libucs.so.0(ucs_handle_error+0x2fd) [0x7fb00eda188d]
+ 1  /mnt/data/yushen/miniconda3/lib/./libucs.so.0(+0x2fa7f) [0x7fb00eda1a7f]
+ 2  /mnt/data/yushen/miniconda3/lib/./libucs.so.0(+0x2fc4a) [0x7fb00eda1c4a]
+ 3  /lib/x86_64-linux-gnu/libpthread.so.0(+0x14420) [0x7fb00f819420]
+ 4  /mnt/data/yushen/abacus-develop/build/abacus_basic_para(+0xf3761) [0x55ae00f1f761]
+ 5  /mnt/data/yushen/abacus-develop/build/abacus_basic_para(+0xf3d88) [0x55ae00f1fd88]
+ 6  /mnt/data/yushen/abacus-develop/build/abacus_basic_para(+0xf3ef0) [0x55ae00f1fef0]
+ 7  /lib/x86_64-linux-gnu/libc.so.6(+0x468a7) [0x7fb00f2f38a7]
+ 8  /lib/x86_64-linux-gnu/libc.so.6(on_exit+0) [0x7fb00f2f3a60]
+ 9  /mnt/data/yushen/miniconda3/lib/./libgfortran.so.5(_gfortran_stop_string+0x13) [0x7fb00ef81033]
+10  /mnt/data/yushen/miniconda3/lib/liblapack.so.3(+0x1c4b1e) [0x7fb010aaeb1e]
+11  /mnt/data/yushen/miniconda3/lib/liblapack.so.3(dstedc_+0x131) [0x7fb010c3e271]
+12  /mnt/data/yushen/miniconda3/lib/libelpa_onenode_openmp.so.19(+0x1d3446) [0x7fb011ace446]
+13  /mnt/data/yushen/miniconda3/lib/libelpa_onenode_openmp.so.19(__solve_tridi_MOD_solve_tridi_cpu_double+0xabe) [0x7fb011ad969e]
+14  /mnt/data/yushen/miniconda3/lib/libelpa_onenode_openmp.so.19(__elpa2_impl_MOD_elpa_solve_evp_complex_2stage_a_h_a_double_impl+0xe23) [0x7fb011a942d3]
+15  /mnt/data/yushen/miniconda3/lib/libelpa_onenode_openmp.so.19(__elpa_impl_MOD_elpa_eigenvectors_a_h_a_dc+0x140) [0x7fb01194a3f0]
+16  /mnt/data/yushen/miniconda3/lib/libelpa_onenode_openmp.so.19(elpa_eigenvectors_a_h_a_dc+0x18a) [0x7fb011952a3a]
+17  /mnt/data/yushen/abacus-develop/build/abacus_basic_para(+0x79296c) [0x55ae015be96c]
+18  /mnt/data/yushen/abacus-develop/build/abacus_basic_para(+0x793c69) [0x55ae015bfc69]
+19  /mnt/data/yushen/abacus-develop/build/abacus_basic_para(+0x43d711) [0x55ae01269711]
+20  /mnt/data/yushen/abacus-develop/build/abacus_basic_para(+0x4296fc) [0x55ae012556fc]
+21  /mnt/data/yushen/abacus-develop/build/abacus_basic_para(+0x42bc5e) [0x55ae01257c5e]
+22  /mnt/data/yushen/abacus-develop/build/abacus_basic_para(+0x57881a) [0x55ae013a481a]
+23  /mnt/data/yushen/abacus-develop/build/abacus_basic_para(+0x55b469) [0x55ae01387469]
+24  /mnt/data/yushen/abacus-develop/build/abacus_basic_para(+0x55baf2) [0x55ae01387af2]
+25  /mnt/data/yushen/abacus-develop/build/abacus_basic_para(+0x3bd783) [0x55ae011e9783]
+26  /mnt/data/yushen/abacus-develop/build/abacus_basic_para(+0x3d9491) [0x55ae01205491]
+27  /mnt/data/yushen/abacus-develop/build/abacus_basic_para(+0x3d89f4) [0x55ae012049f4]
+28  /mnt/data/yushen/abacus-develop/build/abacus_basic_para(+0x3d8b7d) [0x55ae01204b7d]
+29  /mnt/data/yushen/abacus-develop/build/abacus_basic_para(+0xac8a4) [0x55ae00ed88a4]
+30  /lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf3) [0x7fb00f2d1083]
+31  /mnt/data/yushen/abacus-develop/build/abacus_basic_para(+0xc5b3e) [0x55ae00ef1b3e]
+=================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   PID 848758 RUNNING AT cmhpcl007
+=   EXIT CODE: 139
+=   CLEANING UP REMAINING PROCESSES
+=   YOU CAN IGNORE THE BELOW CLEANUP MESSAGES
+===================================================================================
+YOUR APPLICATION TERMINATED WITH THE EXIT STRING: Segmentation fault (signal 11)
+This typically refers to a problem with your application.
+Please see the FAQ page for debugging suggestions

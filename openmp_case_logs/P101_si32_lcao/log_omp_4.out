@@ -1,0 +1,47 @@
+                                                                                     
+                              ABACUS v3.11.0-beta.1
+
+               Atomic-orbital Based Ab-initio Computation at UStc                    
+
+                     Website: http://abacus.ustc.edu.cn/                             
+               Documentation: https://abacus.deepmodeling.com/                       
+                  Repository: https://github.com/abacusmodeling/abacus-develop       
+                              https://github.com/deepmodeling/abacus-develop         
+                      Commit: 0e6f73dcd (Sat May 23 14:12:42 2026 +0800)
+
+ Info: Local MPI proc number: 1,OpenMP thread number: 4,Total thread number: 4,Local thread limit: 96
+Sat May 23 19:00:06 2026
+ MAKE THE DIR         : OUT.autotest/
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+ Warning: The lattice vector is left-handed; a right-handed vector is prefered.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+ RUNNING WITH DEVICE  : CPU / AMD EPYC 9475F 48-Core Processor (x1)
+ WARNING: some of potential function is set to zero cause of less than 1e-30.
+ UNIFORM GRID DIM     : 192 * 96 * 96
+ UNIFORM GRID DIM(BIG): 48 * 24 * 24
+ DONE(0.174236   SEC) : SYMMETRY
+ DONE(0.17424    SEC) : SETUP UNITCELL
+ DONE(0.215257   SEC) : INIT K-POINTS
+ ----------------------------------------------------------------
+ Self-consistent calculations for electrons
+ ----------------------------------------------------------------
+ SPIN    KPOINTS         PROCESSES   THREADS/PROC  THREADS/TOTAL 
+ 1       1               1           4             4             
+ ----------------------------------------------------------------
+ Use Systematically Improvable Atomic bases
+ ----------------------------------------------------------------
+ TOTAL NBASE 416
+ ELEMENT ORBITALS        NBASE       NATOM       
+ Si      2s2p1d-8au      13          32          
+ ----------------------------------------------------------------
+ Initial plane wave basis and FFT box
+ ----------------------------------------------------------------
+ DONE(0.307329   SEC) : INIT PLANEWAVE
+ START CHARGE         : atomic
+ DONE(0.393353   SEC) : CHARGE
+ DONE(0.408113   SEC) : POTENTIALS
+
+ ================================================================
+ SELF-CONSISTENT: 
+ ================================================================
+ DONE(1.0227     SEC) : INIT SCF

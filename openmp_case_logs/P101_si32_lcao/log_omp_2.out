@@ -1,0 +1,61 @@
+                                                                                     
+                              ABACUS v3.11.0-beta.1
+
+               Atomic-orbital Based Ab-initio Computation at UStc                    
+
+                     Website: http://abacus.ustc.edu.cn/                             
+               Documentation: https://abacus.deepmodeling.com/                       
+                  Repository: https://github.com/abacusmodeling/abacus-develop       
+                              https://github.com/deepmodeling/abacus-develop         
+                      Commit: 0e6f73dcd (Sat May 23 14:12:42 2026 +0800)
+
+ Sat May 23 18:59:49 2026
+Info: Local MPI proc number: 1,OpenMP thread number: 2,Total thread number: 2,Local thread limit: 96
+ MAKE THE DIR         : OUT.autotest/
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+ Warning: The lattice vector is left-handed; a right-handed vector is prefered.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+ RUNNING WITH DEVICE  : CPU / AMD EPYC 9475F 48-Core Processor (x1)
+ WARNING: some of potential function is set to zero cause of less than 1e-30.
+ UNIFORM GRID DIM     : 192 * 96 * 96
+ UNIFORM GRID DIM(BIG): 48 * 24 * 24
+ DONE(0.171394   SEC) : SYMMETRY
+ DONE(0.171398   SEC) : SETUP UNITCELL
+ DONE(0.211779   SEC) : INIT K-POINTS
+ ----------------------------------------------------------------
+ Self-consistent calculations for electrons
+ ----------------------------------------------------------------
+ SPIN    KPOINTS         PROCESSES   THREADS/PROC  THREADS/TOTAL 
+ 1       1               1           2             2             
+ ----------------------------------------------------------------
+ Use Systematically Improvable Atomic bases
+ ----------------------------------------------------------------
+ TOTAL NBASE 416
+ ELEMENT ORBITALS        NBASE       NATOM       
+ Si      2s2p1d-8au      13          32          
+ ----------------------------------------------------------------
+ Initial plane wave basis and FFT box
+ ----------------------------------------------------------------
+ DONE(0.365747   SEC) : INIT PLANEWAVE
+ START CHARGE         : atomic
+ DONE(0.47568    SEC) : CHARGE
+ DONE(0.495335   SEC) : POTENTIALS
+
+ ================================================================
+ SELF-CONSISTENT: 
+ ================================================================
+ DONE(1.36519    SEC) : INIT SCF
+ Problem setting option. Aborting...
+ ** On entry to DSTEDC parameter number  6 had an illegal value
+corrupted double-linked list
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   PID 849004 RUNNING AT cmhpcl007
+=   EXIT CODE: 134
+=   CLEANING UP REMAINING PROCESSES
+=   YOU CAN IGNORE THE BELOW CLEANUP MESSAGES
+===================================================================================
+YOUR APPLICATION TERMINATED WITH THE EXIT STRING: Aborted (signal 6)
+This typically refers to a problem with your application.
+Please see the FAQ page for debugging suggestions

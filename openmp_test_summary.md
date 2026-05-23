@@ -93,3 +93,5 @@ ctest -R '^MODULE_HSOLVER_(cg|dav|bpcg)$' --output-on-failure
 本次 OpenMP 验证范围仅包含 `MODULE_HSOLVER_cg`、`MODULE_HSOLVER_dav` 和 `MODULE_HSOLVER_bpcg`，不包含 LCAO 算例或 LCAO 并行入口。
 
 这里已完成的是三个方法对应的单元测试基准；实际输入算例的 OpenMP 结果需要按新的小算例集合重新跑并单独记录。
+
+仓库中的 `openmp_case_logs/P101_si32_lcao`、`openmp_case_logs/P102_si64_lcao` 保留为补充性的探索日志：前者记录了 ELPA/LCAO 路径下的失败与中断现象，后者仅保留到单线程运行中的部分输出，不计入本报告的主验证结论。

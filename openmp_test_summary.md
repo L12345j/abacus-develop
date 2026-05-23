@@ -4,6 +4,8 @@
 
 验证 ABACUS 矩阵对角化模块的 OpenMP 多线程路径是否在不改变算法逻辑的前提下保持正确性，并为底层 CPU vector kernel 的并行加速提供性能记录。
 
+在当前收窄后的范围内，本报告仅保留每个方法对应的一个小算例，不再包含中等算例。
+
 重点验证对象是 `source/source_base/kernels/math_kernel_op.h` 和 `source/source_base/kernels/math_kernel_op_vec.cpp` 所对应的逐元素向量/标量算子路径，以及 `source/source_hsolver/diago_cg.cpp`、`source/source_hsolver/diago_david.cpp` 中频繁调用这些 kernel 的测试入口。
 
 ## 2. 测试对象和文件路径
@@ -84,7 +86,10 @@ CSV 文件位置示例：`openmp_benchmark_logs/MODULE_HSOLVER_cg/benchmark_open
 conda activate abacus
 cd build
 ctest -R '^MODULE_HSOLVER_(cg|dav|bpcg)$' --output-on-failure
-OMP_NUM_THREADS=4 OMP_PROC_BIND=spread OMP_PLACES=cores ctest -R MODULE_HSOLVER_LCAO_parallel --output-on-failure
 ```
 
 如果 `ctest` 未注册对应测试，则请先确认 `build/source/source_hsolver/test/CTestTestfile.cmake` 是否存在，并确保 `BUILD_TESTING=ON` 后重新配置。
+
+本次 OpenMP 验证范围仅包含 `MODULE_HSOLVER_cg`、`MODULE_HSOLVER_dav` 和 `MODULE_HSOLVER_bpcg`，不包含 LCAO 算例或 LCAO 并行入口。
+
+这里已完成的是三个方法对应的单元测试基准；实际输入算例的 OpenMP 结果需要按新的小算例集合重新跑并单独记录。

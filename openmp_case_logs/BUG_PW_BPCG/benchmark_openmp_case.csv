@@ -1,0 +1,5 @@
+case,threads,wall_time,eigen_time,total_energy,scf_steps,converged,status,speedup,efficiency
+BUG_PW_BPCG,1,0.22,NA,NA,0,0,FAIL,1.000000,1.000000
+BUG_PW_BPCG,2,0.20,NA,NA,0,0,FAIL,NA,NA
+BUG_PW_BPCG,4,0.22,NA,NA,0,0,FAIL,NA,NA
+BUG_PW_BPCG,8,0.20,NA,NA,0,0,FAIL,NA,NA

@@ -1,0 +1,105 @@
+                                                                                     
+                              ABACUS v3.11.0-beta.1
+
+               Atomic-orbital Based Ab-initio Computation at UStc                    
+
+                     Website: http://abacus.ustc.edu.cn/                             
+               Documentation: https://abacus.deepmodeling.com/                       
+                  Repository: https://github.com/abacusmodeling/abacus-develop       
+                              https://github.com/deepmodeling/abacus-develop         
+                      Commit: 0e6f73dcd (Sat May 23 14:12:42 2026 +0800)
+
+ Sat May 23 19:23:28 2026
+Info: Local MPI proc number: 1,OpenMP thread number: 8,Total thread number: 8,Local thread limit: 96
+ MAKE THE DIR         : OUT.autotest/
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+ Warning: The lattice vector is left-handed; a right-handed vector is prefered.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+ RUNNING WITH DEVICE  : CPU / AMD EPYC 9475F 48-Core Processor (x1)
+ WARNING: some of potential function is set to zero cause of less than 1e-30.
+ UNIFORM GRID DIM     : 72 * 72 * 72
+ UNIFORM GRID DIM(BIG): 72 * 72 * 72
+ DONE(0.104028   SEC) : SYMMETRY
+ DONE(0.104032   SEC) : SETUP UNITCELL
+ DONE(0.145009   SEC) : INIT K-POINTS
+ ----------------------------------------------------------------
+ Self-consistent calculations for electrons
+ ----------------------------------------------------------------
+ SPIN    KPOINTS         PROCESSES   THREADS/PROC  THREADS/TOTAL 
+ 1       10              1           8             8             
+ ----------------------------------------------------------------
+ Use plane wave basis
+ ----------------------------------------------------------------
+ ELEMENT NATOM       
+ Si      16          
+ ----------------------------------------------------------------
+ Initial plane wave basis and FFT box
+ ----------------------------------------------------------------
+ DONE(0.164562   SEC) : INIT PLANEWAVE
+ START CHARGE         : atomic
+ DONE(0.174256   SEC) : LOCAL POTENTIAL
+ DONE(0.192931   SEC) : NON-LOCAL POTENTIAL
+ MEMORY FOR PSI (MB)  : 106.897
+ WARNING: init_wfc = atomic requires atomic pseudo wavefunctions(PP_PSWFC),
+ but none available. Automatically switch to random initialization.
+ DONE(0.19297    SEC) : INIT BASIS
+
+ ================================================================
+ SELF-CONSISTENT: 
+ ================================================================
+ DONE(0.50935    SEC) : INIT SCF
+ ITER       ETOT/eV          EDIFF/eV         DRHO     TIME/s
+ DA1     -1.71620703e+03   0.00000000e+00   4.3835e-01  49.81
+ DA2     -1.71555186e+03   6.55172155e-01   2.1289e-01   8.53
+ DA3     -1.71573361e+03  -1.81754165e-01   1.1322e-03   8.67
+ DA4     -1.71574975e+03  -1.61370444e-02   9.0100e-05  24.07
+ DA5     -1.71575007e+03  -3.22114689e-04   1.2041e-05  11.62
+ DA6     -1.71575011e+03  -3.74214414e-05   8.6387e-07  15.62
+ DA7     -1.71575011e+03  -1.72940247e-06   2.0059e-07  16.60
+ DA8     -1.71575011e+03  -2.79863394e-07   1.1500e-08   9.15
+ DA9     -1.71575011e+03  -8.45088050e-09   6.6708e-09  18.60
+ ----------------------------------------------------------------
+              Stress_x             Stress_y             Stress_z 
+ ----------------------------------------------------------------
+         41.2724887922        -0.0000000000         0.0000000000 
+          0.0000000000        41.2724887922         0.0000000000 
+          0.0000000000         0.0000000000        41.2724887922 
+ ----------------------------------------------------------------
+ TOTAL-PRESSURE (EXCLUDE KINETIC PART OF IONS): 41.272489 kbar
+
+ TIME STATISTICS
+---------------------------------------------------------------
+  CLASS_NAME         NAME        TIME/s  CALLS   AVG/s  PER/%  
+---------------------------------------------------------------
+               total             169.62 17       9.98   100.00 
+ Driver        atomic_world      169.62 1        169.62 100.00 
+ Relax_Driver  relax_driver      169.41 1        169.41 99.88  
+ ESolver_KS    runner            163.00 1        163.00 96.09  
+ ESolver_KS_PW hamilt2rho_single 162.30 10       16.23  95.68  
+ HSolverPW     solve             162.20 10       16.22  95.63  
+ HSolverPW     solve_psik        153.34 100      1.53   90.40  
+ DiagoDavid    diag_once         151.48 100      1.51   89.31  
+ DiagoDavid    first             32.22  100      0.32   19.00  
+ DiagoDavid    SchmidtOrth       10.69  14103    0.00   6.30   
+ Operator      hPsi              96.63  826      0.12   56.97  
+ Operator      veff_pw           56.54  826      0.07   33.34  
+ PW_Basis_K    recip2real        38.44  18303    0.00   22.66  
+ PW_Basis_K    real2recip        26.56  14103    0.00   15.66  
+ Operator      nonlocal_pw       40.03  826      0.05   23.60  
+ Nonlocal      add_nonlocal_pp   16.68  826      0.02   9.83   
+ DiagoDavid    cal_elem          11.73  826      0.01   6.91   
+ DiagoDavid    cal_grad          97.11  726      0.13   57.25  
+ DiagoDavid    last              10.56  132      0.08   6.23   
+ DiagoDavid    refresh           4.51   32       0.14   2.66   
+ ElecStatePW   psiToRho          8.75   10       0.87   5.16   
+ Forces        cal_force         2.28   1        2.28   1.34   
+ Forces        cal_force_nl      2.24   1        2.24   1.32   
+ Stress_PW     cal_stress        4.14   1        4.14   2.44   
+ Stress        stress_nl         4.10   1        4.10   2.42   
+---------------------------------------------------------------
+
+
+ START  Time  : Sat May 23 19:23:28 2026
+ FINISH Time  : Sat May 23 19:26:18 2026
+ TOTAL  Time  : 170
+ SEE INFORMATION IN : OUT.autotest/

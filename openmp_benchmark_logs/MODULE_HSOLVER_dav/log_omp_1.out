@@ -1,0 +1,17 @@
+[==========] Running 3 tests from 2 test suites.
+[----------] Global test environment set-up.
+[----------] 1 test from DiagoDavRealSystemTest
+[ RUN      ] DiagoDavRealSystemTest.dataH
+[       OK ] DiagoDavRealSystemTest.dataH (0 ms)
+[----------] 1 test from DiagoDavRealSystemTest (0 ms total)
+
+[----------] 2 tests from VerifyDiag/DiagoDavTest
+[ RUN      ] VerifyDiag/DiagoDavTest.RandomHamilt/0
+[       OK ] VerifyDiag/DiagoDavTest.RandomHamilt/0 (7 ms)
+[ RUN      ] VerifyDiag/DiagoDavTest.RandomHamilt/1
+[       OK ] VerifyDiag/DiagoDavTest.RandomHamilt/1 (447 ms)
+[----------] 2 tests from VerifyDiag/DiagoDavTest (455 ms total)
+
+[----------] Global test environment tear-down
+[==========] 3 tests from 2 test suites ran. (455 ms total)
+[  PASSED  ] 3 tests.

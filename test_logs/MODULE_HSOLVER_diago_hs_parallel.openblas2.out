@@ -1,0 +1,47 @@
+[==========] Running 6 tests from 2 test suites.
+[----------] Global test environment set-up.
+[----------] 2 tests from DiagoPxxxgvxElpaTest
+[ RUN      ] DiagoPxxxgvxElpaTest.Double
+[       OK ] DiagoPxxxgvxElpaTest.Double (22 ms)
+[ RUN      ] DiagoPxxxgvxElpaTest.ComplexDouble
+[       OK ] DiagoPxxxgvxElpaTest.ComplexDouble (22 ms)
+[----------] 2 tests from DiagoPxxxgvxElpaTest (45 ms total)
+
+[----------] 4 tests from DiagoPxxxgvxScalapackTest
+[ RUN      ] DiagoPxxxgvxScalapackTest.Double
+[       OK ] DiagoPxxxgvxScalapackTest.Double (2 ms)
+[ RUN      ] DiagoPxxxgvxScalapackTest.ComplexDouble
+[       OK ] DiagoPxxxgvxScalapackTest.ComplexDouble (0 ms)
+[ RUN      ] DiagoPxxxgvxScalapackTest.Float
+Aproc0 = {0,100000000}
+Aproc1 = {0,100000000}
+Aproc0 = {100000000,1}
+Aproc1 = {100000000,1}
+Bproc0 = {0,1}
+Bproc1 = {0,1}
+Bproc0 = {0,1}
+Bproc1 = {0,1}
+Aproc0 = {0,100000000}
+Aproc1 = {0,100000000}
+Aproc0 = {100000000,1}
+Aproc1 = {100000000,1}
+Bproc0 = {0,1}
+Bproc0 = {0,1}
+Bproc1 = {0,1}
+Bproc1 = {0,1}
+Aproc0 = {0,100000000}
+Aproc1 = {0,100000000}
+Aproc0 = {100000000,1}
+Aproc1 = {100000000,1}
+Bproc0 = {0,1}
+Bproc1 = {0,1}
+Bproc0 = {0,1}
+Bproc1 = {0,1}
+[       OK ] DiagoPxxxgvxScalapackTest.Float (0 ms)
+[ RUN      ] DiagoPxxxgvxScalapackTest.ComplexFloat
+[       OK ] DiagoPxxxgvxScalapackTest.ComplexFloat (0 ms)
+[----------] 4 tests from DiagoPxxxgvxScalapackTest (4 ms total)
+
+[----------] Global test environment tear-down
+[==========] 6 tests from 2 test suites ran. (50 ms total)
+[  PASSED  ] 6 tests.

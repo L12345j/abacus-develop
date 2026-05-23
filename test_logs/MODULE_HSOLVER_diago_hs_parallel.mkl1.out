@@ -1,0 +1,42 @@
+[==========] Running 6 tests from 2 test suites.
+[----------] Global test environment set-up.
+[----------] 2 tests from DiagoPxxxgvxElpaTest
+[ RUN      ] DiagoPxxxgvxElpaTest.Double
+[       OK ] DiagoPxxxgvxElpaTest.Double (76 ms)
+[ RUN      ] DiagoPxxxgvxElpaTest.ComplexDouble
+[cmhpcl007:194385:0:194385] Caught signal 11 (Segmentation fault: address not mapped to object at address 0xa)
+==== backtrace (tid: 194385) ====
+ 0  /mnt/data/yushen/miniconda3/lib/./libucs.so.0(ucs_handle_error+0x2fd) [0x7f0a4a5df88d]
+ 1  /mnt/data/yushen/miniconda3/lib/./libucs.so.0(+0x2fa7f) [0x7f0a4a5dfa7f]
+ 2  /mnt/data/yushen/miniconda3/lib/./libucs.so.0(+0x2fc4a) [0x7f0a4a5dfc4a]
+ 3  /lib/x86_64-linux-gnu/libpthread.so.0(+0x14420) [0x7f0a4efdb420]
+ 4  /mnt/data/yushen/miniconda3/lib/libmkl_intel_lp64.so.2(zdotc+0x1f) [0x7f0a5719c65f]
+ 5  /mnt/data/yushen/miniconda3/lib/libscalapack.so(pzpotf2_+0x441) [0x7f0a59a53781]
+ 6  /mnt/data/yushen/miniconda3/lib/libscalapack.so(pzpotrf_+0x365) [0x7f0a59a54125]
+ 7  ./MODULE_HSOLVER_diago_hs_parallel(+0x4bae5) [0x55c5daab4ae5]
+ 8  ./MODULE_HSOLVER_diago_hs_parallel(+0x4cf49) [0x55c5daab5f49]
+ 9  ./MODULE_HSOLVER_diago_hs_parallel(+0x13659) [0x55c5daa7c659]
+10  ./MODULE_HSOLVER_diago_hs_parallel(+0x1428e) [0x55c5daa7d28e]
+11  ./MODULE_HSOLVER_diago_hs_parallel(+0x121dc) [0x55c5daa7b1dc]
+12  ./MODULE_HSOLVER_diago_hs_parallel(+0x12a62) [0x55c5daa7ba62]
+13  /mnt/data/yushen/miniconda3/lib/libgtest.so.1.17.0(_ZN7testing8internal35HandleExceptionsInMethodIfSupportedINS_4TestEvEET0_PT_MS4_FS3_vEPKc+0x4e) [0x7f0a4f0551ae]
+14  /mnt/data/yushen/miniconda3/lib/libgtest.so.1.17.0(_ZN7testing4Test3RunEv+0xe1) [0x7f0a4f055481]
+15  /mnt/data/yushen/miniconda3/lib/libgtest.so.1.17.0(_ZN7testing8TestInfo3RunEv+0x177) [0x7f0a4f055827]
+16  /mnt/data/yushen/miniconda3/lib/libgtest.so.1.17.0(_ZN7testing9TestSuite3RunEv+0x1f6) [0x7f0a4f055c66]
+17  /mnt/data/yushen/miniconda3/lib/libgtest.so.1.17.0(_ZN7testing8internal12UnitTestImpl11RunAllTestsEv+0x5b3) [0x7f0a4f064293]
+18  /mnt/data/yushen/miniconda3/lib/libgtest.so.1.17.0(_ZN7testing8UnitTest3RunEv+0x7d) [0x7f0a4f055e2d]
+19  ./MODULE_HSOLVER_diago_hs_parallel(+0x8ff4) [0x55c5daa71ff4]
+20  /lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf3) [0x7f0a4ea93083]
+21  ./MODULE_HSOLVER_diago_hs_parallel(+0x9c3e) [0x55c5daa72c3e]
+=================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   PID 194385 RUNNING AT cmhpcl007
+=   EXIT CODE: 139
+=   CLEANING UP REMAINING PROCESSES
+=   YOU CAN IGNORE THE BELOW CLEANUP MESSAGES
+===================================================================================
+YOUR APPLICATION TERMINATED WITH THE EXIT STRING: Segmentation fault (signal 11)
+This typically refers to a problem with your application.
+Please see the FAQ page for debugging suggestions

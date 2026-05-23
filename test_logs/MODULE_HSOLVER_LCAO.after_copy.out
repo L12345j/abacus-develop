@@ -1,0 +1,42 @@
+[==========] Running 6 tests from 2 test suites.
+[----------] Global test environment set-up.
+[----------] 3 tests from DiagoTest/DiagoGammaOnlyTest
+[ RUN      ] DiagoTest/DiagoGammaOnlyTest.LCAO/0
+H/S matrix are read from H-GammaOnly-Si64.dat, S-GammaOnly-Si64.dat
+solver=genelpa, NLOCAL=832, nbands=416, nb2d=32
+[       OK ] DiagoTest/DiagoGammaOnlyTest.LCAO/0 (822 ms)
+[ RUN      ] DiagoTest/DiagoGammaOnlyTest.LCAO/1
+H/S matrix are read from H-GammaOnly-Si2.dat, S-GammaOnly-Si2.dat
+solver=scalapack_gvx, NLOCAL=26, nbands=13, nb2d=1
+[       OK ] DiagoTest/DiagoGammaOnlyTest.LCAO/1 (2 ms)
+[ RUN      ] DiagoTest/DiagoGammaOnlyTest.LCAO/2
+H/S matrix are read from H-GammaOnly-Si2.dat, S-GammaOnly-Si2.dat
+solver=lapack, NLOCAL=26, nbands=13, nb2d=1
+[       OK ] DiagoTest/DiagoGammaOnlyTest.LCAO/2 (0 ms)
+[----------] 3 tests from DiagoTest/DiagoGammaOnlyTest (825 ms total)
+
+[----------] 3 tests from DiagoTest/DiagoKPointsTest
+[ RUN      ] DiagoTest/DiagoKPointsTest.LCAO/0
+[cmhpcl007:194060:0:194060] Caught signal 11 (Segmentation fault: address not mapped to object at address 0xa)
+==== backtrace (tid: 194060) ====
+ 0  /mnt/data/yushen/miniconda3/lib/./libucs.so.0(ucs_handle_error+0x2fd) [0x7f36c8e1588d]
+ 1  /mnt/data/yushen/miniconda3/lib/./libucs.so.0(+0x2fa7f) [0x7f36c8e15a7f]
+ 2  /mnt/data/yushen/miniconda3/lib/./libucs.so.0(+0x2fc4a) [0x7f36c8e15c4a]
+ 3  /lib/x86_64-linux-gnu/libpthread.so.0(+0x14420) [0x7f36cd811420]
+ 4  /mnt/data/yushen/miniconda3/lib/libmkl_intel_lp64.so.2(zdotc+0x1f) [0x7f36d59d265f]
+ 5  /mnt/data/yushen/miniconda3/lib/libscalapack.so(pzpotf2_+0x441) [0x7f36d8289781]
+ 6  /mnt/data/yushen/miniconda3/lib/libscalapack.so(pzpotrf_+0x365) [0x7f36d828a125]
+ 7  ./MODULE_HSOLVER_LCAO(+0x5f9e5) [0x558d400309e5]
+ 8  ./MODULE_HSOLVER_LCAO(+0x60e49) [0x558d40031e49]
+ 9  ./MODULE_HSOLVER_LCAO(+0x1eb5d) [0x558d3ffefb5d]
+10  ./MODULE_HSOLVER_LCAO(+0x18dbe) [0x558d3ffe9dbe]
+11  /mnt/data/yushen/miniconda3/lib/libgtest.so.1.17.0(_ZN7testing8internal35HandleExceptionsInMethodIfSupportedINS_4TestEvEET0_PT_MS4_FS3_vEPKc+0x4e) [0x7f36cd88b1ae]
+12  /mnt/data/yushen/miniconda3/lib/libgtest.so.1.17.0(_ZN7testing4Test3RunEv+0xe1) [0x7f36cd88b481]
+13  /mnt/data/yushen/miniconda3/lib/libgtest.so.1.17.0(_ZN7testing8TestInfo3RunEv+0x177) [0x7f36cd88b827]
+14  /mnt/data/yushen/miniconda3/lib/libgtest.so.1.17.0(_ZN7testing9TestSuite3RunEv+0x1f6) [0x7f36cd88bc66]
+15  /mnt/data/yushen/miniconda3/lib/libgtest.so.1.17.0(_ZN7testing8internal12UnitTestImpl11RunAllTestsEv+0x5b3) [0x7f36cd89a293]
+16  /mnt/data/yushen/miniconda3/lib/libgtest.so.1.17.0(_ZN7testing8UnitTest3RunEv+0x7d) [0x7f36cd88be2d]
+17  ./MODULE_HSOLVER_LCAO(+0xbfc1) [0x558d3ffdcfc1]
+18  /lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf3) [0x7f36cd2c9083]
+19  ./MODULE_HSOLVER_LCAO(+0xc93e) [0x558d3ffdd93e]
+=================================

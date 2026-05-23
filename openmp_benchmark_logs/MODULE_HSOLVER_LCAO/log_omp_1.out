@@ -1,0 +1,75 @@
+[==========] Running 6 tests from 2 test suites.
+[----------] Global test environment set-up.
+[----------] 3 tests from DiagoTest/DiagoGammaOnlyTest
+[ RUN      ] DiagoTest/DiagoGammaOnlyTest.LCAO/0
+Error: open file H-GammaOnly-Si64.dat failed, skip!
+Error: open file S-GammaOnly-Si64.dat failed, skip!
+/mnt/data/yushen/abacus-develop/source/source_hsolver/test/diago_lcao_test.cpp:304: Failure
+Value of: dp.produce_HS()
+  Actual: false
+Expected: true
+
+[  FAILED  ] DiagoTest/DiagoGammaOnlyTest.LCAO/0, where GetParam() = 536-byte object <01-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 20-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 F8-77 75-C6 62-55 00-00 07-00 00-00 00-00 00-00 67-65 6E-65 6C-70 61-00 ... 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 75-63 70-5F 00-00 00-00> (0 ms)
+[ RUN      ] DiagoTest/DiagoGammaOnlyTest.LCAO/1
+Error: open file H-GammaOnly-Si2.dat failed, skip!
+Error: open file S-GammaOnly-Si2.dat failed, skip!
+/mnt/data/yushen/abacus-develop/source/source_hsolver/test/diago_lcao_test.cpp:304: Failure
+Value of: dp.produce_HS()
+  Actual: false
+Expected: true
+
+[  FAILED  ] DiagoTest/DiagoGammaOnlyTest.LCAO/1, where GetParam() = 536-byte object <01-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 01-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 F8-77 75-C6 62-55 00-00 0D-00 00-00 00-00 00-00 73-63 61-6C 61-70 61-63 ... 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 30-61 C6-30 00-00 00-00> (0 ms)
+[ RUN      ] DiagoTest/DiagoGammaOnlyTest.LCAO/2
+Error: open file H-GammaOnly-Si2.dat failed, skip!
+Error: open file S-GammaOnly-Si2.dat failed, skip!
+/mnt/data/yushen/abacus-develop/source/source_hsolver/test/diago_lcao_test.cpp:304: Failure
+Value of: dp.produce_HS()
+  Actual: false
+Expected: true
+
+[  FAILED  ] DiagoTest/DiagoGammaOnlyTest.LCAO/2, where GetParam() = 536-byte object <01-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 01-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 F8-77 75-C6 62-55 00-00 06-00 00-00 00-00 00-00 6C-61 70-61 63-6B 00-63 ... 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 08-00 00-00 00-00 00-00> (0 ms)
+[----------] 3 tests from DiagoTest/DiagoGammaOnlyTest (0 ms total)
+
+[----------] 3 tests from DiagoTest/DiagoKPointsTest
+[ RUN      ] DiagoTest/DiagoKPointsTest.LCAO/0
+Error: open file H-KPoints-Si2.dat failed, skip!
+Error: open file S-KPoints-Si2.dat failed, skip!
+/mnt/data/yushen/abacus-develop/source/source_hsolver/test/diago_lcao_test.cpp:348: Failure
+Value of: dp.produce_HS()
+  Actual: false
+Expected: true
+
+[  FAILED  ] DiagoTest/DiagoKPointsTest.LCAO/0, where GetParam() = 536-byte object <01-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 01-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 F8-77 75-C6 62-55 00-00 07-00 00-00 00-00 00-00 67-65 6E-65 6C-70 61-00 ... 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00> (0 ms)
+[ RUN      ] DiagoTest/DiagoKPointsTest.LCAO/1
+Error: open file H-KPoints-Si2.dat failed, skip!
+Error: open file S-KPoints-Si2.dat failed, skip!
+/mnt/data/yushen/abacus-develop/source/source_hsolver/test/diago_lcao_test.cpp:348: Failure
+Value of: dp.produce_HS()
+  Actual: false
+Expected: true
+
+[  FAILED  ] DiagoTest/DiagoKPointsTest.LCAO/1, where GetParam() = 536-byte object <01-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 01-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 F8-77 75-C6 62-55 00-00 0D-00 00-00 00-00 00-00 73-63 61-6C 61-70 61-63 ... 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00> (0 ms)
+[ RUN      ] DiagoTest/DiagoKPointsTest.LCAO/2
+Error: open file H-KPoints-Si64.dat failed, skip!
+Error: open file S-KPoints-Si64.dat failed, skip!
+/mnt/data/yushen/abacus-develop/source/source_hsolver/test/diago_lcao_test.cpp:348: Failure
+Value of: dp.produce_HS()
+  Actual: false
+Expected: true
+
+[  FAILED  ] DiagoTest/DiagoKPointsTest.LCAO/2, where GetParam() = 536-byte object <01-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 20-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 F8-77 75-C6 62-55 00-00 0D-00 00-00 00-00 00-00 73-63 61-6C 61-70 61-63 ... 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 FF-FF FF-FF 00-00 00-00> (0 ms)
+[----------] 3 tests from DiagoTest/DiagoKPointsTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 6 tests from 2 test suites ran. (0 ms total)
+[  PASSED  ] 0 tests.
+[  FAILED  ] 6 tests, listed below:
+[  FAILED  ] DiagoTest/DiagoGammaOnlyTest.LCAO/0, where GetParam() = 536-byte object <01-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 20-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 F8-77 75-C6 62-55 00-00 07-00 00-00 00-00 00-00 67-65 6E-65 6C-70 61-00 ... 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 75-63 70-5F 00-00 00-00>
+[  FAILED  ] DiagoTest/DiagoGammaOnlyTest.LCAO/1, where GetParam() = 536-byte object <01-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 01-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 F8-77 75-C6 62-55 00-00 0D-00 00-00 00-00 00-00 73-63 61-6C 61-70 61-63 ... 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 30-61 C6-30 00-00 00-00>
+[  FAILED  ] DiagoTest/DiagoGammaOnlyTest.LCAO/2, where GetParam() = 536-byte object <01-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 01-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 F8-77 75-C6 62-55 00-00 06-00 00-00 00-00 00-00 6C-61 70-61 63-6B 00-63 ... 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 08-00 00-00 00-00 00-00>
+[  FAILED  ] DiagoTest/DiagoKPointsTest.LCAO/0, where GetParam() = 536-byte object <01-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 01-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 F8-77 75-C6 62-55 00-00 07-00 00-00 00-00 00-00 67-65 6E-65 6C-70 61-00 ... 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00>
+[  FAILED  ] DiagoTest/DiagoKPointsTest.LCAO/1, where GetParam() = 536-byte object <01-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 01-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 F8-77 75-C6 62-55 00-00 0D-00 00-00 00-00 00-00 73-63 61-6C 61-70 61-63 ... 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00>
+[  FAILED  ] DiagoTest/DiagoKPointsTest.LCAO/2, where GetParam() = 536-byte object <01-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 20-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 F8-77 75-C6 62-55 00-00 0D-00 00-00 00-00 00-00 73-63 61-6C 61-70 61-63 ... 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 FF-FF FF-FF 00-00 00-00>
+
+ 6 FAILED TESTS
+ERROR:some tests are not passed

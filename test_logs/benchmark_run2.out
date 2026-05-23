@@ -1,0 +1,12 @@
+[MODULE_HSOLVER_LCAO] threads=1 time=Command exited with non-zero status 1
+0.22 speedup=1.000000 efficiency=1.000000 status=FAIL
+[MODULE_HSOLVER_LCAO] threads=2 time=Command exited with non-zero status 1
+0.28 speedup=NA efficiency=NA status=FAIL
+[MODULE_HSOLVER_LCAO] threads=4 time=Command exited with non-zero status 1
+0.23 speedup=NA efficiency=NA status=FAIL
+[MODULE_HSOLVER_cg] threads=1 time=Command exited with non-zero status 1
+0.24 speedup=1.000000 efficiency=1.000000 status=FAIL
+[MODULE_HSOLVER_cg] threads=2 time=Command exited with non-zero status 1
+0.30 speedup=NA efficiency=NA status=FAIL
+[MODULE_HSOLVER_cg] threads=4 time=Command exited with non-zero status 1
+0.24 speedup=NA efficiency=NA status=FAIL

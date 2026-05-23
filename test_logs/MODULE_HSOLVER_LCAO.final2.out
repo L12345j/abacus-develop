@@ -1,0 +1,35 @@
+[==========] Running 6 tests from 2 test suites.
+[----------] Global test environment set-up.
+[----------] 3 tests from DiagoTest/DiagoGammaOnlyTest
+[ RUN      ] DiagoTest/DiagoGammaOnlyTest.LCAO/0
+H/S matrix are read from H-GammaOnly-Si64.dat, S-GammaOnly-Si64.dat
+solver=genelpa, NLOCAL=832, nbands=416, nb2d=32
+[       OK ] DiagoTest/DiagoGammaOnlyTest.LCAO/0 (506 ms)
+[ RUN      ] DiagoTest/DiagoGammaOnlyTest.LCAO/1
+H/S matrix are read from H-GammaOnly-Si2.dat, S-GammaOnly-Si2.dat
+solver=scalapack_gvx, NLOCAL=26, nbands=13, nb2d=1
+[       OK ] DiagoTest/DiagoGammaOnlyTest.LCAO/1 (0 ms)
+[ RUN      ] DiagoTest/DiagoGammaOnlyTest.LCAO/2
+H/S matrix are read from H-GammaOnly-Si2.dat, S-GammaOnly-Si2.dat
+solver=lapack, NLOCAL=26, nbands=13, nb2d=1
+[       OK ] DiagoTest/DiagoGammaOnlyTest.LCAO/2 (0 ms)
+[----------] 3 tests from DiagoTest/DiagoGammaOnlyTest (507 ms total)
+
+[----------] 3 tests from DiagoTest/DiagoKPointsTest
+[ RUN      ] DiagoTest/DiagoKPointsTest.LCAO/0
+H/S matrix are read from H-KPoints-Si2.dat, S-KPoints-Si2.dat
+solver=genelpa, NLOCAL=26, nbands=13, nb2d=1
+[       OK ] DiagoTest/DiagoKPointsTest.LCAO/0 (0 ms)
+[ RUN      ] DiagoTest/DiagoKPointsTest.LCAO/1
+H/S matrix are read from H-KPoints-Si2.dat, S-KPoints-Si2.dat
+solver=scalapack_gvx, NLOCAL=26, nbands=13, nb2d=1
+[       OK ] DiagoTest/DiagoKPointsTest.LCAO/1 (0 ms)
+[ RUN      ] DiagoTest/DiagoKPointsTest.LCAO/2
+H/S matrix are read from H-KPoints-Si64.dat, S-KPoints-Si64.dat
+solver=scalapack_gvx, NLOCAL=832, nbands=416, nb2d=32
+[       OK ] DiagoTest/DiagoKPointsTest.LCAO/2 (1172 ms)
+[----------] 3 tests from DiagoTest/DiagoKPointsTest (1173 ms total)
+
+[----------] Global test environment tear-down
+[==========] 6 tests from 2 test suites ran. (1681 ms total)
+[  PASSED  ] 6 tests.

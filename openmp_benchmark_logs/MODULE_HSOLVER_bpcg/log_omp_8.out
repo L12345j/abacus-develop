@@ -1,0 +1,17 @@
+[==========] Running 3 tests from 2 test suites.
+[----------] Global test environment set-up.
+[----------] 2 tests from DiagoBPCGTest
+[ RUN      ] DiagoBPCGTest.Hamilt
+[       OK ] DiagoBPCGTest.Hamilt (0 ms)
+[ RUN      ] DiagoBPCGTest.readH
+[       OK ] DiagoBPCGTest.readH (0 ms)
+[----------] 2 tests from DiagoBPCGTest (0 ms total)
+
+[----------] 1 test from VerifyCG/DiagoBPCGTest
+[ RUN      ] VerifyCG/DiagoBPCGTest.RandomHamilt/0
+[       OK ] VerifyCG/DiagoBPCGTest.RandomHamilt/0 (330 ms)
+[----------] 1 test from VerifyCG/DiagoBPCGTest (330 ms total)
+
+[----------] Global test environment tear-down
+[==========] 3 tests from 2 test suites ran. (331 ms total)
+[  PASSED  ] 3 tests.

@@ -1,0 +1,26 @@
+[MODULE_HSOLVER_LCAO] threads=1 time=Command exited with non-zero status 1
+0.28 speedup=1.000000 efficiency=1.000000 status=FAIL
+[MODULE_HSOLVER_LCAO] threads=2 time=Command exited with non-zero status 1
+0.25 speedup=NA efficiency=NA status=FAIL
+[MODULE_HSOLVER_LCAO] threads=4 time=Command exited with non-zero status 1
+0.26 speedup=NA efficiency=NA status=FAIL
+[  0%] Built target parameter
+[ 25%] Built target device
+[ 25%] Built target container
+[ 75%] Built target base
+[ 75%] Built target psi
+[ 75%] Building CXX object source/source_hsolver/test/CMakeFiles/MODULE_HSOLVER_cg.dir/diago_cg_test.cpp.o
+[ 75%] Building CXX object source/source_hsolver/test/CMakeFiles/MODULE_HSOLVER_cg.dir/__/diago_cg.cpp.o
+[100%] Building CXX object source/source_hsolver/test/CMakeFiles/MODULE_HSOLVER_cg.dir/__/diago_iter_assist.cpp.o
+[100%] Building CXX object source/source_hsolver/test/CMakeFiles/MODULE_HSOLVER_cg.dir/__/diag_const_nums.cpp.o
+[100%] Building CXX object source/source_hsolver/test/CMakeFiles/MODULE_HSOLVER_cg.dir/__/__/source_basis/module_pw/test/test_tool.cpp.o
+[100%] Building CXX object source/source_hsolver/test/CMakeFiles/MODULE_HSOLVER_cg.dir/__/__/source_hamilt/operator.cpp.o
+[100%] Building CXX object source/source_hsolver/test/CMakeFiles/MODULE_HSOLVER_cg.dir/__/__/source_pw/module_pwdft/op_pw.cpp.o
+[100%] Linking CXX executable MODULE_HSOLVER_cg
+[100%] Built target MODULE_HSOLVER_cg
+[MODULE_HSOLVER_cg] threads=1 time=Command exited with non-zero status 1
+0.23 speedup=1.000000 efficiency=1.000000 status=FAIL
+[MODULE_HSOLVER_cg] threads=2 time=Command exited with non-zero status 1
+0.25 speedup=NA efficiency=NA status=FAIL
+[MODULE_HSOLVER_cg] threads=4 time=Command exited with non-zero status 1
+0.24 speedup=NA efficiency=NA status=FAIL

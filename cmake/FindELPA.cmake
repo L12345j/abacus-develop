@@ -56,6 +56,26 @@ if(NOT ELPA_INCLUDE_DIRS AND PKG_CONFIG_FOUND)
   else()
     pkg_search_module(ELPA REQUIRED IMPORTED_TARGET GLOBAL elpa)
   endif()
+
+  # pkg-config often returns logical names like "elpa_openmp;scalapack;blas".
+  # Resolve them to absolute library paths to avoid make treating names as targets.
+  set(_elpa_resolved_link_libraries "")
+  foreach(_elpa_lib IN LISTS ELPA_LINK_LIBRARIES)
+    if(IS_ABSOLUTE "${_elpa_lib}" OR "${_elpa_lib}" MATCHES "^-l")
+      list(APPEND _elpa_resolved_link_libraries "${_elpa_lib}")
+    else()
+      unset(_elpa_lib_path CACHE)
+      find_library(_elpa_lib_path NAMES ${_elpa_lib} HINTS ${ELPA_LIBRARY_DIRS})
+      if(_elpa_lib_path)
+        list(APPEND _elpa_resolved_link_libraries "${_elpa_lib_path}")
+      else()
+        list(APPEND _elpa_resolved_link_libraries "-l${_elpa_lib}")
+      endif()
+    endif()
+  endforeach()
+  if(_elpa_resolved_link_libraries)
+    set(ELPA_LINK_LIBRARIES "${_elpa_resolved_link_libraries}")
+  endif()
 elseif(NOT PKG_CONFIG_FOUND)
   message(STATUS
     "ELPA : We need pkg-config to get all information about the elpa library")
@@ -68,15 +88,21 @@ find_package_handle_standard_args(ELPA DEFAULT_MSG ELPA_LINK_LIBRARIES ELPA_INCL
 
 # Copy the results to the output variables and target.
 if(ELPA_FOUND)
-    list(GET ELPA_LINK_LIBRARIES 0 ELPA_LIBRARY)
     set(ELPA_INCLUDE_DIR ${ELPA_INCLUDE_DIRS})
 
     if(NOT TARGET ELPA::ELPA)
-        add_library(ELPA::ELPA UNKNOWN IMPORTED)
-        set_target_properties(ELPA::ELPA PROPERTIES
-           IMPORTED_LINK_INTERFACE_LANGUAGES "C"
-           IMPORTED_LOCATION "${ELPA_LIBRARY}"
-           INTERFACE_INCLUDE_DIRECTORIES "${ELPA_INCLUDE_DIR}")
+    list(GET ELPA_LINK_LIBRARIES 0 ELPA_LIBRARY)
+    list(REMOVE_AT ELPA_LINK_LIBRARIES 0)
+
+    add_library(ELPA::ELPA UNKNOWN IMPORTED)
+    set_target_properties(ELPA::ELPA PROPERTIES
+       IMPORTED_LINK_INTERFACE_LANGUAGES "C"
+       IMPORTED_LOCATION "${ELPA_LIBRARY}"
+       INTERFACE_INCLUDE_DIRECTORIES "${ELPA_INCLUDE_DIR}")
+
+    if(ELPA_LINK_LIBRARIES)
+      target_link_libraries(ELPA::ELPA INTERFACE ${ELPA_LINK_LIBRARIES})
+    endif()
     endif()
 endif()
 
